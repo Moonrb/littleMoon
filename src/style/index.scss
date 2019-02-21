@@ -1,0 +1,273 @@
+@import "Global";
+//--------------------------------------开始正式页面书写-------------------------------------------
+//-----------------页面开头登录注册网页跳转
+#rise {
+  height: 0.32rem;
+  line-height: 0.32rem;
+  background: #f2f2f2;
+  p{
+    padding-right: 0.22rem;
+  }
+  >ul{
+    height: 100%;
+    li{
+      margin-left: 0.18rem;
+      position: relative;
+      z-index: 100;
+      >ul{
+        width: 100px;
+        display: none;
+        position: absolute;
+        left: -0.1rem;
+        background: #fff;
+        text-align: center;
+        li{
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      &:hover ul{
+        display: block;
+      }
+    }
+  }
+  ul{
+    li{
+      i{
+        padding: 0px 5px;
+        color: $taobao-color;
+      }
+    }
+    li:nth-of-type(1),li:nth-of-type(3),li:nth-of-type(6),li:nth-of-type(7){
+      a{
+        display: block;
+        height: 100%;
+        padding: 0 5px;
+        &:hover{
+          background: #fff;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+//#rise ul li:nth-of-type(1) a, #rise ul li:nth-of-type(3) a, #rise ul li:nth-of-type(6) a, #rise ul li:nth-of-type(7) a {
+//  display: block;
+//  height: 100%;
+//  padding: 0 5px;
+//}
+
+//#rise ul li:nth-of-type(1) a:hover, #rise ul li:nth-of-type(3) a:hover, #rise ul li:nth-of-type(6) a:hover, #rise ul li:nth-of-type(7) a:hover {
+//  background: #fff;
+//}
+
+//--------------------------------header----
+$gray: #999999;
+#header {
+  height: 1.33rem;
+  position: relative;
+  h1{
+    position: absolute;
+    left: -0.52rem;
+  }
+  >div{
+    margin-left: 0.84rem;
+    margin-top: 0.4rem;
+    width: 6.25rem;
+    height: 0.68rem;
+    position: absolute;
+    left: 3.21rem;
+    input{
+      border: 2px solid $taobao-color;
+      border-right: none;
+      width: 4.95rem;
+      height: 0.41rem;
+      text-indent: 6px;
+    }
+    div{
+      width: 1.30rem;
+      height: 0.41rem;
+      background: $taobao-color;
+      text-align: center;
+      line-height: 0.41rem;
+      font-size: 0.18rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    ul{
+      li{
+        height: 0.27rem;
+        line-height: 0.27rem;
+        width: 0.55rem;
+        text-align: center;
+        a{
+          border-right: 2px solid $gray;
+          padding-right: 0.11rem;
+          color: $gray;
+          span{
+            color: $taobao-color;
+          }
+        }
+      }
+      li:nth-of-type(9){
+        a{
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+//--------------nav---------------
+
+
+#nav {
+  width: 2rem;
+  height: 4.8rem;
+  position: relative;
+  z-index: 100;
+  li{
+    a{
+      img{
+        width: 1.2rem;
+      }
+    }
+  }
+  ul.vertical{
+    height: 4.8rem;
+    font-size: 0.12rem;
+    position: absolute;
+    left: -0.07rem;
+    top: 0px;
+    li{
+      height: 0.35rem;
+      background: rgba(90, 90, 90, .6);
+      width: 2rem;
+      line-height: 0.35rem;
+      color: #fff;
+      text-align: left;
+      text-indent: 10px;
+      a{
+        color: #fff;
+        display: block;
+        &:hover{
+          background: #fff;
+          color: $taobao-color;
+        }
+      }
+    }
+    li:nth-of-type(1){
+      height: 0.38rem;
+      line-height: 0.38rem;
+      background: $taobao-color;
+      font-size: 0.16rem;
+    }
+  }
+  ul.across{
+    display: flex;
+    position: absolute;
+    left: 202px;
+    top: 0px;
+    li{
+      width: 0.64rem;
+      height: 0.38rem;
+      text-align: left;
+      line-height: 0.38rem;
+      margin-left: 0.22rem;
+      a{
+        display: block;
+        width: 0.64rem;
+        height: 0.38rem;
+        font-size: 0.16rem;
+      }
+
+    }
+    li:nth-of-type(1),li:nth-of-type(2){
+      width: 1.2rem;
+      margin: 0;
+    }
+  }
+}
+
+//----------------------轮播图------------------------------
+#lunbo {
+  width: 100%;
+  background: #0086b3;
+  position: absolute;
+  left: 0px;
+  top: 2.11rem;
+  .carousel{
+    width: 100%;
+    li{
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      img{
+        width: 100%;
+        height: 5.6rem;
+        opacity: 0;
+      }
+    }
+    li.first {
+      img {
+        opacity: 1;
+        transition: 1s;
+      }
+    }
+  }
+  //----------------------------------轮播图锚点--------
+  .anchor{
+    display: flex;
+    position: absolute;
+    left: 510px;
+    top: 510px;
+    width: 100%;
+    height: 0.05rem;
+
+    li{
+      background: #969896;
+      width: 0.35rem;
+      height: 0.05rem;
+      margin-left: 10px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    li.ico{
+      background: #fff;
+    }
+  }
+
+}
+
+//------------商品1-------------
+#commodity {
+  height: 3.74rem;
+  background: #cccccc;
+  position: absolute;
+  left: 0px;
+  top: 800px;
+  display: flex;
+  li{
+    margin: 10px;
+  }
+  li:nth-of-type(3){
+    margin-right: 0px;
+  }
+  h2{
+    height: 0.52rem;
+    line-height: 0.52rem;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  a{
+    img{
+      height: 3.16rem;
+    }
+  }
+}
+

@@ -1,9 +1,8 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
-
 //安装之后，在运行webpack的路径下，运行webpack-dev-server，就可以启动服务器，实现自动刷新
 module.exports = {
-    //mode: 'development',
+    mode: 'development',
     entry: {
         index: './src/script/main.js',
         enter: './src/script/enter.js',

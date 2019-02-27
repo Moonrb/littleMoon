@@ -1,12 +1,22 @@
 @import "Global";
 //--------------------------------------开始正式页面书写-------------------------------------------
 //-----------------页面开头登录注册网页跳转
+#all{
+  width: 1260px;
+  overflow: hidden;
+  height: 100%;
+}
 #rise {
   height: 0.32rem;
   line-height: 0.32rem;
   background: #f2f2f2;
   p{
     padding-right: 0.22rem;
+    a{
+      &:hover{
+        color: $taobao-color;
+      }
+    }
   }
   >ul{
     height: 100%;
@@ -45,7 +55,8 @@
         height: 100%;
         padding: 0 5px;
         &:hover{
-          background: #fff;
+          color: $taobao-color;
+          background:#fff;
         }
       }
 
@@ -53,23 +64,12 @@
   }
 }
 
-
-
-//#rise ul li:nth-of-type(1) a, #rise ul li:nth-of-type(3) a, #rise ul li:nth-of-type(6) a, #rise ul li:nth-of-type(7) a {
-//  display: block;
-//  height: 100%;
-//  padding: 0 5px;
-//}
-
-//#rise ul li:nth-of-type(1) a:hover, #rise ul li:nth-of-type(3) a:hover, #rise ul li:nth-of-type(6) a:hover, #rise ul li:nth-of-type(7) a:hover {
-//  background: #fff;
-//}
-
 //--------------------------------header----
 $gray: #999999;
 #header {
   height: 1.33rem;
   position: relative;
+  background: #fff;
   h1{
     position: absolute;
     left: -0.52rem;
@@ -87,6 +87,7 @@ $gray: #999999;
       width: 4.95rem;
       height: 0.41rem;
       text-indent: 6px;
+      outline: none;
     }
     div{
       width: 1.30rem;
@@ -124,10 +125,9 @@ $gray: #999999;
 
 //--------------nav---------------
 
-
 #nav {
-  width: 2rem;
-  height: 4.8rem;
+  width: 200px;
+  height: 583px;
   position: relative;
   z-index: 100;
   li{
@@ -168,10 +168,12 @@ $gray: #999999;
     }
   }
   ul.across{
+    width: 1060px;
     display: flex;
     position: absolute;
     left: 202px;
     top: 0px;
+    background: #fff;
     li{
       width: 0.64rem;
       height: 0.38rem;
@@ -195,13 +197,13 @@ $gray: #999999;
 
 //----------------------轮播图------------------------------
 #lunbo {
-  width: 100%;
-  background: #0086b3;
-  position: absolute;
-  left: 0px;
-  top: 2.11rem;
+  width: 1263px;
+  position:relative;
+  height: 562px;
+  top: -544px;
   .carousel{
     width: 100%;
+    height: 502px;
     li{
       width: 100%;
       position: absolute;
@@ -228,7 +230,7 @@ $gray: #999999;
     top: 510px;
     width: 100%;
     height: 0.05rem;
-
+    z-index: 100;
     li{
       background: #969896;
       width: 0.35rem;
@@ -246,14 +248,14 @@ $gray: #999999;
 
 //------------商品1-------------
 #commodity {
-  height: 3.74rem;
-  background: #cccccc;
-  position: absolute;
-  left: 0px;
-  top: 800px;
+  height: 3.9rem;
+  position: relative;
+  top: -514px;
   display: flex;
   li{
     margin: 10px;
+
+
   }
   li:nth-of-type(3){
     margin-right: 0px;
@@ -270,4 +272,177 @@ $gray: #999999;
     }
   }
 }
+//=========一堆商标样式===========/
+#trademark{
+  width: 1225px;
+  height: 328px;
+  position: relative;
+  top:-480px;
+  background: #fff;
+  ul{
+    display: flex;
+    flex-wrap:wrap;
+    li{
+      flex: 10%;
+      width: 126px;
+      height: 108px;
+      display: flex;
+      align-items:center;
+      border:rgb(245,245,245) 1px solid;
+      position: relative;
 
+      img{
+        width: 100%;
+      }
+      span{
+        @extend img;
+        background: rgba(51,51,51,.0);
+        position: absolute;
+        height: 100%;
+        top: 0px;
+        transition: .5s;
+        div{
+          color: #fff;
+          background: rgb(250,0,54);
+          width: 63px;
+          height: 18px;
+          font-size: 12px;
+          line-height: 15px;
+          border-radius: 9px;
+          text-align: center;
+          position: absolute;
+          left: 28px;
+          top:72px;
+          display: none;
+         }
+        }
+    }
+  }
+}
+//=============商品模块区1=================/
+#s_moduleone{
+position: relative;
+  top: -400px;
+
+  .moduleone{
+    width:1233px;
+    height: 680px;
+    .m_nav{
+      width: 100%;
+      height: 60px;
+      background: #fff;
+      img{
+        margin-top: 25px;
+        width: 214px;
+        height: 22px;
+      }
+      ul{
+        margin-top: 25px;
+        width: 620px;
+        height:15px;
+        display: flex;
+        li{
+          flex:1;
+          a{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    >div:nth-of-type(2){
+      width: 1233px;
+      height: 620px;
+      display: flex;
+      >div:nth-of-type(1){
+        width: 253px;
+        height: 620px;
+        position: relative;
+        >span{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgba(255,255,255,0);
+          &:hover{
+            background: rgba(255,255,255,.5);
+          }
+        }
+        >img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      >div:nth-of-type(2){
+        width: 980px;
+        height:620px;
+        display: flex;
+        flex-wrap: wrap;
+        >div{
+            width: 50%;
+            height: 50%;
+            padding:8px;
+          display: flex;
+          position: relative;
+          >div{
+            width: 50%;
+            height: 100%;
+            background: #fff;
+            span{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background: rgba(255,255,255,0);
+              margin: 5px;
+            }
+            img{
+              width: 100%;
+              padding: 5px;
+            }
+            p{
+              text-align: center;
+              height: 30px;
+              font-size: 15px;
+              line-height: 15px;
+            }
+          }
+          >.div_ico{
+            border: 2px solid #f00;
+          }
+        }
+        >div:nth-of-type(1){
+          background: #fff;
+          position: relative;
+          p{
+            background: #f5f5f5;
+            width: 459px;
+            height: 58px;
+            display: flex;
+
+            a{
+              flex: 1;
+              font-size: 20px;
+              line-height: 58px;
+              margin-left: 5px;
+
+              }
+            }
+          a.ag{
+               background: #00b262;
+               color:#fff;
+          }
+          img{
+            width: 233px;
+            height: 227px;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+
+}

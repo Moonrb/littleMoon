@@ -10,11 +10,11 @@
 </head>
 <body style="height: 10000px">
 <!-- -------------------------------------;网站头,登录注册-->
-
+<div id="all">
 <div id="rise">
     <p class="l">喵，欢迎来天猫</p>
-    <p class="l"><a href="#">请登录</a></p>
-    <p class="l"><a href="#"> 免费注册</a></p>
+    <p class="l" ><a href="#" class ="main_login">请登录</a></p>
+    <p class="l" ><a href="#" class = "main_register"> 免费注册</a></p>
 
     <ul class="r">
         <li class="l"><a href="#">我的淘宝</a>
@@ -23,7 +23,7 @@
                 <li><a href="#">已卖出的宝贝</a></li>
             </ul>
         </li>
-        <li class="l"><a href="#"><i class="iconfont icon-gouwuche-"></i>购物车0件</a></li>
+        <li class="l"><a href="#" class="main_shopping"><i class="iconfont icon-gouwuche-"></i>购物车0件</a></li>
         <li class="l"><a href="#">收藏夹</a>
             <ul>
                 <li><a href="#">收藏的商品</a></li>
@@ -99,40 +99,119 @@
 
 <!-----------------------------------轮播图-------------------------->
 <div id="lunbo">
-    <ul class="carousel">
-        <li class="first"><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-    </ul>
-    <ul class="anchor">
-        <li class="ico"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+   <!--=======里面有两个ul=========-->
+    <!--第一个ul的classname是carousel-->
+    <!--第一个ul里面的焦点li,classname是first-->
+    <!--第二个ul的classname是anchor-->
+    <!--第二个ul的焦点li的classname是ico-->
 </div>
-
-
 <!--------------------图-------------->
 <ul id="commodity">
     <li>
+
         <h2><span>品牌闪购</span>BRAND SALE <a href="#">更多</a></h2>
-        <a href="#"><img src="../assets/images/go3.jpg"/>></a>
+        <a href="#">
+            <img src="../assets/images/go3.jpg"/>
+        </a>
     </li>
     <li>
+
         <h2><span>聚名品</span>LUXURY CHANNEL <a href="#">更多</a></h2>
-        <a href="#"><img src="../assets/images/go2.jpg"/>></a>
+        <a href="#">
+            <img src="../assets/images/go2.jpg"/>
+        </a>
     </li>
     <li>
+
         <h2><span>品牌活动</span>BRAND ACTIVITY <a href="#">更多</a></h2>
-        <a href="#"><img src="../assets/images/go1.jpg"/>></a>
+        <a href="#">
+            <img src="../assets/images/go1.jpg"/>
+        </a>
     </li>
 </ul>
+
+<!--------------一堆sb商标---------------->
+<div id="trademark">
+<ul>
+</ul>
+</div>
+<!--------------------商品模块1区-->
+    <div id="s_moduleone">
+        <div class="moduleone">
+            <div class="m_nav">
+                <img src="../assets/images/newimg/(25).png" class="l">
+                <ul class="r">
+                    <li><a href="#">进口食品</a></li>
+                    <li><a href="#">食品饮料</a></li>
+                    <li><a href="#">粮油副食</a></li>
+                    <li><a href="#">美容洗护</a></li>
+                    <li><a href="#">家具家电</a></li>
+                    <li><a href="#">家具清理</a></li>
+                    <li><a href="#">母婴用品</a></li>
+                    <li><a href="#">生鲜水果</a></li>
+                </ul>
+            </div>
+            <!--下面全部-->
+            <div>
+                <!--左边盒子-->
+             <div>
+                 <span></span>
+                 <img src="../assets/images/sp_mould/c1.png">
+             </div>
+                <!--右边盒子-->
+                <div>
+                    <!--右边盒子里的4个盒子-->
+                    <!--第一个盒子小轮播图-->
+                    <div class="sp_lunbo">
+                        <p>
+                            <a href="#" class="ag">今日疯抢</a>
+                            <a href="#">限贩装</a>
+                        </p>
+                        <img src="../assets/images/0.jpg" alt="">
+                    </div>
+                            <div>
+                                <div>
+                                    <span></span>
+                                    <img src="../assets/images/sp_mould/s1.jpg">
+                                    <p>商品信息</p>
+                                </div>
+                                <div>
+                                    <span></span>
+                                    <img src="../assets/images/sp_mould/s2.jpg">
+                                    <p>商品信息</p>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <span></span>
+                                    <img src="../assets/images/sp_mould/s3.jpg">
+                                    <p>商品信息</p>
+
+                                </div>
+                                <div>
+                                    <span></span>
+                                    <img src="../assets/images/sp_mould/s4.jpg">
+                                    <p>商品信息</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <span></span>
+                                    <img src="../assets/images/sp_mould/s5.jpg">
+                                    <p>商品信息</p>
+                                </div>
+                                <div>
+                                    <span></span>
+                                    <img src="../assets/images/sp_mould/s6.jpg">
+                                    <p>商品信息</p>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 

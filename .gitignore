@@ -62,3 +62,8 @@ typings/
 
 # Dependency directories
 .idea/
+
+# Dependency directories
+build/
+# Dependency directories
+.build/
